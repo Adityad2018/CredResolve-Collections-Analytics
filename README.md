@@ -60,6 +60,6 @@ Open notebooks with `jupyter lab` and run the analysis notebooks from top to bot
 - August 2026 is partial through 8 August. Do not compare it with full months as if complete.
 - Forecasts are experimental gross-payment scenarios, not actuals, incremental recovery or a committed budget.
 
-## 10/10 submission-quality commitment
+## caution
 
-This package is designed to achieve the highest defensible standard **within the available inputs**: traceable metrics, reproducible transformations, consistent definitions, clear decision recommendations and transparent limitations. A 10/10 quality target does not mean the source data is complete. Missing months, costs, historical denominators and attribution keys are explicitly identified as data-owner dependencies; they are not fabricated to create artificial completeness.
+This package is designed to achieve the highest defensible standard **within the available inputs**: traceable metrics, reproducible transformations, consistent definitions, clear decision recommendations and transparent limitationns and meaning the source data is complete. Missing months, costs, historical denominators and attribution keys are explicitly identified as data-owner dependencies; they are not fabricated to create artificial completeness.
