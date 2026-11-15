@@ -24,3 +24,8 @@ data/processed/*
 # Large generated analysis outputs are delivered in the ZIP; selectively add only if approved
 outputs/*
 !outputs/.gitkeep
+
+data/raw/
+collections_analytics_project/
+.env
+.env.*
