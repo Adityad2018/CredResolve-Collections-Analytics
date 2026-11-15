@@ -1,0 +1,26 @@
+# Python / macOS
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+.venv*/
+venv/
+.env
+.env.*
+!.env.example
+
+# Raw customer / operational extracts: do not push to GitHub without data-owner approval
+data/raw/*
+!data/raw/README.md
+
+# Local databases and transient artifacts
+*.db
+*.sqlite
+*.sqlite3
+data/processed/*
+!data/processed/.gitkeep
+
+# Large generated analysis outputs are delivered in the ZIP; selectively add only if approved
+outputs/*
+!outputs/.gitkeep

@@ -1,0 +1,20 @@
+flowchart LR
+  subgraph Sources[Operational source systems]
+    A[Payments / processor]
+    B[Accounts and borrowers]
+    C[Calls / dispositions / telephony]
+    D[Digital / field / PTP]
+    E[Campaigns / targeting / agents]
+  end
+  A-->R; B-->R; C-->R; D-->R; E-->R
+  R[Immutable raw zone<br/>batch ID · checksum · schema version] --> S[Staging<br/>type and timestamp normalization]
+  S --> Q[Quality gates and quarantine<br/>keys · nulls · conflicts · freshness]
+  Q --> G[Golden entities and events<br/>validated keys · identity crosswalk]
+  G --> F[Point-in-time feature layer]
+  G --> M[Versioned metric registry]
+  F --> M
+  M --> V[CEO dashboard and alerts]
+  V --> X[Decision and experiment readout]
+  X --> T[Stratified randomized pilot<br/>treatment / holdout]
+  T --> O[Incremental net recovery<br/>confidence interval · cost · guardrails]
+  O --> V
